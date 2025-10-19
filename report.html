@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>রিপোর্ট সাবমিট - People’s Voice, Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Analytics Integration -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR-GA-ID');
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans min-h-screen">
+
+  <!-- 🌟 Navigation Bar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-white">
+          <a href="index.html">People’s Voice, Bangladesh</a>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+          <a href="index.html#contact" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+          <a href="index.html#about" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+          <a href="report.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Report</a>
+          <a href="login.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Login</a>
+          <a href="donate.html" class="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105">Donate</a>
+        </div>
+        
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="hamburger" class="hamburger text-white focus:outline-none">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4 space-y-4 pt-2">
+        <a href="index.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Home</a>
+        <a href="index.html#contact" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Contact</a>
+        <a href="index.html#about" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">About</a>
+        <a href="report.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Report</a>
+        <a href="login.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Login</a>
+        <a href="donate.html" class="block w-full px-3 py-2 bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white rounded-full text-base font-semibold text-center transition-all">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for Fixed Nav -->
+  <div class="h-20"></div>
+
+  <!-- 🌟 Hero Section for Report Submission -->
+  <section id="home" class="relative bg-[url('https://img.freepik.com/premium-vector/submit-report-get-approved-with-planning_18660-200.jpg')] bg-cover bg-center bg-no-repeat h-[60vh] flex items-center justify-center text-center">
+    <!-- Gradient Overlay for better blending -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black/90"></div>
+    <div class="relative z-10 text-white px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">সমস্যা রিপোর্ট করুন</h1>
+      <p class="text-lg md:text-xl mb-6 drop-shadow-md">আপনার এলাকার সমস্যা জানান – আমরা তা প্রশাসনের কাছে পৌঁছে দেবো। আপনার কণ্ঠস্বর গুরুত্বপূর্ণ!</p>
+      <a href="#report-form" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg">রিপোর্ট সাবমিট করুন</a>
+    </div>
+  </section>
+
+  <!-- 📝 Report Submission Form Section -->
+  <main class="flex-1 py-16">
+    <section id="report-form">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">নাগরিকের কণ্ঠস্বর পোর্টাল</h2>
+        <p class="text-gray-700 mb-10 text-center">আপনার এলাকার সমস্যা, অভিযোগ বা পরামর্শ লিখুন। আমরা এটি তদন্ত করে প্রয়োজনীয় কর্তৃপক্ষের কাছে পৌঁছে দেবো। আপনার তথ্য গোপনীয় রাখা হবে।</p>
+        <form method="POST" action="/api/submit-report" class="bg-white p-8 rounded-2xl shadow-md text-left" enctype="multipart/form-data">
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block mb-2 font-semibold text-gray-800" for="report-name">নাম (ঐচ্ছিক)</label>
+              <input type="text" id="report-name" name="name" placeholder="আপনার নাম" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all">
+            </div>
+            <div>
+              <label class="block mb-2 font-semibold text-gray-800" for="report-district">জেলা *</label>
+              <select id="report-district" name="district" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all" required>
+                <option value="">জেলা নির্বাচন করুন</option>
+                <option value="bagerhat">বাগেরহাট</option>
+                <option value="bandarban">বান্দরবান</option>
+                <option value="barguna">বরগুনা</option>
+                <option value="barisal">বরিশাল</option>
+                <option value="bhola">ভোলা</option>
+                <option value="bogura">বগুড়া</option>
+                <option value="brahmanbaria">ব্রাহ্মণবাড়িয়া</option>
+                <option value="chandpur">চাঁদপুর</option>
+                <option value="chapainawabganj">চাঁপাইনবাবগঞ্জ</option>
+                <option value="chattogram">চট্টগ্রাম</option>
+                <option value="chuadanga">চুয়াডাঙ্গা</option>
+                <option value="coxsbazar">কক্সবাজার</option>
+                <option value="cumilla">কুমিল্লা</option>
+                <option value="dhaka">ঢাকা</option>
+                <option value="dinajpur">দিনাজপুর</option>
+                <option value="faridpur">ফরিদপুর</option>
+                <option value="feni">ফেনী</option>
+                <option value="gaibandha">গাইবান্ধা</option>
+                <option value="gazipur">গাজীপুর</option>
+                <option value="gopalganj">গোপালগঞ্জ</option>
+                <option value="habiganj">হবিগঞ্জ</option>
+                <option value="jamalpur">জামালপুর</option>
+                <option value="jashore">যশোর</option>
+                <option value="jhalokati">ঝালকাঠি</option>
+                <option value="jhenaidah">ঝিনাইদহ</option>
+                <option value="joypurhat">জয়পুরহাট</option>
+                <option value="khagrachhari">খাগড়াছড়ি</option>
+                <option value="khulna">খুলনা</option>
+                <option value="kishoreganj">কিশোরগঞ্জ</option>
+                <option value="kurigram">কুড়িগ্রাম</option>
+                <option value="kushtia">কুষ্টিয়া</option>
+                <option value="lakshmipur">লক্ষ্মীপুর</option>
+                <option value="lalmonirhat">লালমনিরহাট</option>
+                <option value="madaripur">মাদারীপুর</option>
+                <option value="magura">মাগুরা</option>
+                <option value="manikganj">মানিকগঞ্জ</option>
+                <option value="meherpur">মেহেরপুর</option>
+                <option value="moulvibazar">মৌলভীবাজার</option>
+                <option value="munshiganj">মুন্সীগঞ্জ</option>
+                <option value="mymensingh">ময়মনসিংহ</option>
+                <option value="naogaon">নওগাঁ</option>
+                <option value="narail">নড়াইল</option>
+                <option value="narsingdi">নরসিংদী</option>
+                <option value="narayanganj">নারায়ণগঞ্জ</option>
+                <option value="natore">নাটোর</option>
+                <option value="netrokona">নেত্রকোণা</option>
+                <option value="nilphamari">নীলফামারী</option>
+                <option value="noakhali">নোয়াখালী</option>
+                <option value="pabna">পাবনা</option>
+                <option value="panchagarh">পঞ্চগড়</option>
+                <option value="patuakhali">পটুয়াখালী</option>
+                <option value="pirojpur">পিরোজপুর</option>
+                <option value="rajbari">রাজবাড়ী</option>
+                <option value="rajshahi">রাজশাহী</option>
+                <option value="rangamati">রাঙ্গামাটি</option>
+                <option value="rangpur">রংপুর</option>
+                <option value="satkhira">সাতক্ষীরা</option>
+                <option value="shariatpur">শরীয়তপুর</option>
+                <option value="sherpur">শেরপুর</option>
+                <option value="sirajganj">সিরাজগঞ্জ</option>
+                <option value="sunamganj">সুনামগঞ্জ</option>
+                <option value="sylhet">সিলেট</option>
+                <option value="tangail">টাঙ্গাইল</option>
+                <option value="thakurgaon">ঠাকুরগাঁও</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2 font-semibold text-gray-800" for="report-location">স্পেসিফিক লোকেশন (ঐচ্ছিক)</label>
+            <input type="text" id="report-location" name="location" placeholder="যেমন: রাস্তার নাম, এলাকা" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all">
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2 font-semibold text-gray-800" for="report-category">সমস্যার ক্যাটাগরি *</label>
+            <select id="report-category" name="category" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all" required>
+              <option value="">ক্যাটাগরি নির্বাচন করুন</option>
+              <option value="corruption">দুর্নীতি</option>
+              <option value="environment">পরিবেশ দূষণ</option>
+              <option value="road">রাস্তা ও যোগাযোগ</option>
+              <option value="health">স্বাস্থ্য সেবা</option>
+              <option value="education">শিক্ষা</option>
+              <option value="police">পুলিশ বা নিরাপত্তা</option>
+              <option value="labor">শ্রম অধিকার</option>
+              <option value="other">অন্যান্য</option>
+            </select>
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2 font-semibold text-gray-800" for="report-description">সমস্যার বিবরণ *</label>
+            <textarea id="report-description" name="description" rows="5" placeholder="সমস্যার বিস্তারিত বিবরণ লিখুন... কী ঘটেছে, কখন, কোথায়, কার সাথে সম্পর্কিত।" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all" required></textarea>
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2 font-semibold text-gray-800" for="report-evidence">প্রমাণ (ছবি / ভিডিও / ডকুমেন্ট) *</label>
+            <input type="file" id="report-evidence" name="evidence" accept="image/*,video/*,.pdf" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all" required>
+            <p class="text-sm text-gray-500 mt-2">সর্বোচ্চ ১০ এমবি। একাধিক ফাইল আপলোড করুন যদি প্রয়োজন হয়।</p>
+          </div>
+          <div class="mb-6">
+            <label class="flex items-center">
+              <input type="checkbox" name="consent" class="rounded border-gray-300 text-yellow-600 focus:ring-yellow-500" required>
+              <span class="ml-2 text-sm text-gray-600">আমি এই তথ্যের সত্যতা নিশ্চিত করছি এবং গোপনীয়তা নীতি মেনে চলবো</span>
+            </label>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">রিপোর্ট সাবমিট করুন</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>🧭 Digital HQ: Registered in Dhaka, Bangladesh</p>
+    <p>📧 info@pvd.org.bd</p>
+    <p class="mt-2">"Let the people speak - জনগণকে কথা বলার সুযোগ দিন"</p>
+    <p class="mt-2 text-sm text-gray-400">© 2025 People’s Voice, Bangladesh | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

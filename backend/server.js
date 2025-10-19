@@ -68,3 +68,36 @@ app.post('/api/contact', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' }); // Folder for uploaded files
+
+// API for report submission
+app.post('/api/submit-report', upload.single('evidence'), async (req, res) => {
+  const { name, district, location, category, description, consent } = req.body;
+  const evidence = req.file ? req.file.path : '';
+  const newReport = new Report({ name, district, location, category, description, evidence });
+  await newReport.save();
+  res.send('Report submitted successfully!');
+});
+
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
+// User Schema (যদি না থাকে)
+const userSchema = new mongoose.Schema({
+  email: String,
+  password: String // Hashed
+});
+const User = mongoose.model('User', userSchema);
+
+// API for login
+app.post('/api/login', async (req, res) => {
+  const { email, password } = req.body;
+  const user = await User.findOne({ email });
+  if (!user || !await bcrypt.compare(password, user.password)) {
+    return res.status(401).send('Invalid credentials');
+  }
+  const token = jwt.sign({ id: user._id }, 'secret_key', { expiresIn: '1h' });
+  res.send({ token });
+});
