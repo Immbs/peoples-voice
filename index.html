@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People’s Voice, Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Analytics Integration -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR-GA-ID');
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- 🌟 Navigation Bar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-white">
+          <a href="index.html">People’s Voice, Bangladesh</a>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+          <a href="#contact" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+          <a href="#about" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+          <a href="report.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Report</a>
+          <a href="login.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Login</a>
+          <a href="donate.html" class="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105">Donate</a>
+        </div>
+        
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="hamburger" class="hamburger text-white focus:outline-none">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4 space-y-4 pt-2">
+        <a href="index.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Home</a>
+        <a href="#contact" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Contact</a>
+        <a href="#about" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">About</a>
+        <a href="report.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Report</a>
+        <a href="login.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Login</a>
+        <a href="donate.html" class="block w-full px-3 py-2 bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white rounded-full text-base font-semibold text-center transition-all">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for Fixed Nav -->
+  <div class="h-20"></div>
+
+  <!-- 🌟 Section 1: Homepage Layout -->
+  <section id="home" class="relative bg-[url('images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-[90vh] flex items-center justify-center text-center">
+    <!-- Gradient Overlay for better blending -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black/90"></div>
+    <div class="relative z-10 text-white px-6">
+      <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">People’s Voice, Bangladesh</h1>
+      <p class="text-lg md:text-2xl mb-6 drop-shadow-md">আমরাই জনগণের কণ্ঠ, আমরাই পরিবর্তনের দূত।</p>
+      <div class="space-x-3">
+        <a href="register.html" class="bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full font-semibold shadow-lg">Join as Volunteer</a>
+        <a href="#report" class="bg-yellow-500 hover:bg-yellow-600 text-white px-5 py-3 rounded-full font-semibold shadow-lg">Report an Issue</a>
+        <a href="#about" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-full font-semibold shadow-lg">Learn More...</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🏛 Mission & Vision -->
+  <section class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Our Mission & Vision</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700">
+      People’s Voice, Bangladesh এর মূল লক্ষ্য হলো জনগণের কণ্ঠস্বরকে শক্তিশালী করা এবং সমাজে স্বচ্ছতা, জবাবদিহিতা ও ন্যায়ের ভিত্তিতে পরিবর্তন আনা। আমরা বিশ্বাস করি যে সচেতন নাগরিকরা সমাজে ইতিবাচক পরিবর্তনের প্রধান শক্তি। আমাদের মিশন হলো নাগরিকদের তাদের সমস্যা, অভিযোগ ও মতামত প্রকাশ করার জন্য একটি নিরাপদ এবং সহজ প্ল্যাটফর্ম প্রদান করা, যাতে তারা সরকারি ও সামাজিক পদক্ষেপকে প্রভাবিত করতে পারে। ভিশন হিসেবে আমরা চাই একটি এমন বাংলাদেশ যেখানে প্রতিটি নাগরিকের কণ্ঠস্বর শোনা হবে, এবং সবাই একসাথে সামাজিক ও জাতীয় উন্নয়নে অংশগ্রহণ করবে।
+    </p>
+  </section>
+
+  <!-- 📰 Live Updates -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Live Updates</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded-2xl shadow-md">
+          <img src="https://media.istockphoto.com/id/981791550/photo/group-of-volunteers-cleaning-public-park-in-tokyo.jpg?s=612x612&w=0&k=20&c=ZudwIv_g3p0OMdfOf4A38fHEi-xQys3SZpTrtyN_rNY=" class="rounded-xl mb-4" alt="স্বেচ্ছাসেবক দল পার্ক পরিষ্কার করছে" loading="lazy" />
+          <h3 class="text-xl font-semibold mb-2">Volunteer Activity</h3>
+          <p class="text-gray-600">স্বেচ্ছাসেবক দল শহরের বিভিন্ন এলাকায় পরিচ্ছন্নতা অভিযান পরিচালনা করছে।</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl shadow-md">
+          <img src="https://www.crisisgroup.org/sites/default/files/2024-08/bangladesh_hero_824.jpg" class="rounded-xl mb-4" alt="বাংলাদেশের জনগণের ক্যাম্পেইন" loading="lazy" />
+          <h3 class="text-xl font-semibold mb-2">Public Campaign</h3>
+          <p class="text-gray-600">‘ভোট আমার অধিকার’ প্রচারণায় ৫০০ জন নাগরিক অংশ নিয়েছেন।</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl shadow-md">
+          <img src="https://drhbd.org/img/2-ctg.jpg" class="rounded-xl mb-4" alt="চট্টগ্রামের কার্যক্রমের ছবি" loading="lazy" />
+          <h3 class="text-xl font-semibold mb-2">Latest News</h3>
+          <p class="text-gray-600">People’s Voice এখন দেশের ৬৪ জেলায় কার্যক্রম শুরু করেছে।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📸 Featured Photos -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Featured Photos & Videos</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-500" alt="জনগণের অংশগ্রহণের ছবি" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-500" alt="কার্যক্রমের ফটো" loading="lazy" />
+        <iframe class="w-full h-60 rounded-2xl shadow-md" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen loading="lazy" title="ভলান্টিয়ার কার্যক্রমের ভিডিও"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🗣 Section 3: Citizen Voice Portal -->
+  <section id="report" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Citizen Voice Portal</h2>
+      <p class="text-gray-700 mb-10">আপনার এলাকার সমস্যা জানান, আমরা তা প্রশাসনের কাছে পৌঁছে দেবো।</p>
+      <form method="POST" action="/api/submit-report" class="bg-gray-50 p-8 rounded-2xl shadow-md text-left">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-2 font-semibold" for="report-name">নাম (ঐচ্ছিক)</label>
+            <input type="text" id="report-name" name="name" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg px-4 py-2">
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold" for="report-district">জেলা</label>
+            <input type="text" id="report-district" name="district" placeholder="Your District" class="w-full border border-gray-300 rounded-lg px-4 py-2">
+          </div>
+        </div>
+        <div class="mt-6">
+          <label class="block mb-2 font-semibold" for="report-description">সমস্যার বিবরণ</label>
+          <textarea id="report-description" name="description" rows="4" placeholder="Write details..." class="w-full border border-gray-300 rounded-lg px-4 py-2"></textarea>
+        </div>
+        <div class="mt-6">
+          <label class="block mb-2 font-semibold" for="report-evidence">প্রমাণ (ছবি / ভিডিও)</label>
+          <input type="file" id="report-evidence" name="evidence" class="w-full border border-gray-300 rounded-lg px-4 py-2">
+        </div>
+        <div class="text-center mt-8">
+          <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-full">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🧩 Section 2: About, Services & Contact -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">About Us</h2>
+      <p class="max-w-3xl mx-auto text-gray-700 mb-10">
+        People’s Voice, Bangladesh — একটি নাগরিক-নেতৃত্বাধীন সংগঠন যা দেশের প্রতিটি মানুষের কণ্ঠকে ন্যায্যভাবে তুলে ধরার লক্ষ্য নিয়ে কাজ করে। আমরা জনগণের তথ্য, অভিযোগ ও মতামত সংগ্রহ করে সরকার, প্রশাসন ও জনগণের মধ্যে একটি সেতুবন্ধন তৈরি করি। আমাদের স্বপ্ন — “একটি সচেতন ও অংশগ্রহণমূলক বাংলাদেশ” গঠন করা যেখানে প্রতিটি নাগরিকের মতামতই হবে শক্তি।
+      </p>
+      <img src="https://scontent.fdac178-1.fna.fbcdn.net/v/t39.30808-6/544976836_774871814920080_2828650769659405952_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=JobQtcGS0CQQ7kNvwFUXcoK&_nc_oc=AdkiQK9YKM96j-uSSCtVP1RguN8mGoAf0wsHVzbq9ARFQ6acV5SX_7q9Usw6a40oXkM&_nc_zt=23&_nc_ht=scontent.fdac178-1.fna&_nc_gid=tD9XPF46zeL0aoC4fG4JuA&oh=00_Afc76BKsGwCYHWlh4_NPh_UHFdb4no4NFQz3ZNjyZMM2iA&oe=68F84BD2" class="mx-auto rounded-2xl shadow-md w-2/3 mb-12" alt="সংগঠনের টিমের ছবি" loading="lazy" />
+      <h3 class="text-2xl font-semibold mb-6">Our Core Services</h3>
+      <div class="grid md:grid-cols-3 gap-6 text-left">
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h4 class="font-bold text-lg mb-2">Citizen Reporting</h4>
+          <p class="text-gray-600 mb-4">নাগরিকদের সমস্যা ও অনিয়ম রিপোর্ট করার সুযোগ।</p>
+          <a href="#report" class="text-blue-600 font-semibold">Read More →</a>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h4 class="font-bold text-lg mb-2">Volunteer Network</h4>
+          <p class="text-gray-600 mb-4">দেশব্যাপী স্বেচ্ছাসেবক টিমের মাধ্যমে মানবিক সহায়তা।</p>
+          <a href="#volunteer" class="text-blue-600 font-semibold">Join →</a>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h4 class="font-bold text-lg mb-2">Training & Workshop</h4>
+          <p class="text-gray-600 mb-4">জনগণের দক্ষতা বৃদ্ধির জন্য নিয়মিত প্রশিক্ষণ আয়োজন।</p>
+          <a href="#contact" class="text-blue-600 font-semibold">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="text-gray-700 mb-10">প্রশ্ন, সহযোগিতা বা পরামর্শের জন্য আমাদের সাথে যোগাযোগ করুন।</p>
+      <form method="POST" action="/api/contact" class="bg-gray-50 p-8 rounded-2xl shadow-md text-left">
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="contact-email">Your Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="example@mail.com" class="w-full border border-gray-300 rounded-lg px-4 py-2">
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="Write your message..." class="w-full border border-gray-300 rounded-lg px-4 py-2"></textarea>
+        </div>
+        <div class="text-center mt-8">
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>🧭 Digital HQ: Registered in Dhaka, Bangladesh</p>
+    <p>📧 info@pvd.org.bd</p>
+    <p class="mt-2">"Let the people speak - জনগণকে কথা বলার সুযোগ দিন"</p>
+    <p class="mt-2 text-sm text-gray-400">© 2025 People’s Voice, Bangladesh | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
