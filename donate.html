@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate - People’s Voice, Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Analytics Integration -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR-GA-ID');
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- 🌟 Navigation Bar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-white">
+          <a href="index.html">People’s Voice, Bangladesh</a>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+          <a href="index.html#contact" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+          <a href="index.html#about" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+          <a href="report.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Report</a>
+          <a href="login.html" class="text-white hover:text-blue-300 px-3 py-2 rounded-md text-sm font-medium transition-colors">Login</a>
+          <a href="donate.html" class="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105">Donate</a>
+        </div>
+        
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="hamburger" class="hamburger text-white focus:outline-none">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4 space-y-4 pt-2">
+        <a href="index.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Home</a>
+        <a href="index.html#contact" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Contact</a>
+        <a href="index.html#about" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">About</a>
+        <a href="report.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Report</a>
+        <a href="login.html" class="block px-3 py-2 text-white hover:text-blue-300 rounded-md text-base font-medium">Login</a>
+        <a href="donate.html" class="block w-full px-3 py-2 bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white rounded-full text-base font-semibold text-center transition-all">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer for Fixed Nav -->
+  <div class="h-20"></div>
+
+  <!-- 🌟 Hero Section for Donate -->
+  <section id="home" class="relative bg-[url('https://www.educowebdesign.com/sites/default/files/inline-images/charity_water_CTA-centric_non_profit_hero-message_example.jpg')] bg-cover bg-center bg-no-repeat h-[70vh] flex items-center justify-center text-center">
+    <!-- Gradient Overlay for better blending -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-black/90"></div>
+    <div class="relative z-10 text-white px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Support the People's Voice, Bangladesh</h1>
+      <p class="text-lg md:text-2xl mb-6 drop-shadow-md">আপনার দানের মাধ্যমে জনগণের কণ্ঠকে আরও শক্তিশালী করুন। প্রতিটি অবদান পরিবর্তন আনে !</p>
+      <div class="space-x-3">
+        <a href="#donate-form" class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg">Donate Now</a>
+        <a href="index.html#about" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💰 Why Donate Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Why Donate to People's Voice, Bangladesh?</h2>
+      <p class="max-w-3xl mx-auto text-center text-lg text-gray-700 mb-12">
+        আপনার অবদান আমাদের মিশনকে সমর্থন করে – জনগণের কণ্ঠস্বরকে শক্তিশালী করতে এবং সমাজে ন্যায়বিচার প্রতিষ্ঠায় সহায়তা করতে। আমরা প্রতিটি টাকা স্বচ্ছভাবে ব্যবহার করি।
+      </p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 p-6 rounded-2xl text-center">
+          <div class="text-4xl mb-4">🛡️</div>
+          <h3 class="text-xl font-semibold mb-2">Empower Citizens</h3>
+          <p class="text-gray-600">নাগরিকদের সমস্যা রিপোর্ট ও সমাধানের প্ল্যাটফর্ম তৈরি।</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl text-center">
+          <div class="text-4xl mb-4">📢</div>
+          <h3 class="text-xl font-semibold mb-2">Amplify Voices</h3>
+          <p class="text-gray-600">জনগণের মতামত সরকারের কাছে পৌঁছে দেওয়া।</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl text-center">
+          <div class="text-4xl mb-4">🌱</div>
+          <h3 class="text-xl font-semibold mb-2">Build Community</h3>
+          <p class="text-gray-600">স্বেচ্ছাসেবক নেটওয়ার্ক ও প্রশিক্ষণের মাধ্যমে সমাজ গঠন।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📊 Impact Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Your Impact</h2>
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div>
+          <div class="text-4xl font-bold text-green-600">500+</div>
+          <p class="text-gray-600">Reports Resolved</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-green-600">1000+</div>
+          <p class="text-gray-600">Volunteers Trained</p>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-green-600">64</div>
+          <p class="text-gray-600">Districts Covered</p>
+        </div>
+      </div>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        ২০২৫ সালে আপনার দানের সাহায্যে আমরা আরও অনেক পরিবর্তন আনবো। যোগ দিন এই যাত্রায়!
+      </p>
+    </div>
+  </section>
+
+  <!-- 💳 Donate Form Section -->
+  <section id="donate-form" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Make a Donation</h2>
+      <p class="text-gray-700 mb-10">নিরাপদ ও সহজ পদ্ধতিতে দান করুন। ন্যূনতম ৫০ টাকা থেকে শুরু করুন।</p>
+      
+      <!-- Donation Levels -->
+      <div class="grid md:grid-cols-4 gap-4 mb-8">
+        <button class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg font-semibold" onclick="setAmount(100)">১০০ টাকা</button>
+        <button class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg font-semibold" onclick="setAmount(500)">৫০০ টাকা</button>
+        <button class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg font-semibold" onclick="setAmount(1000)">১০০০ টাকা</button>
+        <button class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg font-semibold" onclick="setAmount(5000)">৫০০০+ টাকা</button>
+      </div>
+
+      <form method="POST" action="/api/donate" class="bg-gray-50 p-8 rounded-2xl shadow-md max-w-md mx-auto text-left">
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold" for="donate-amount">Amount (BDT)</label>
+          <input type="number" id="donate-amount" name="amount" placeholder="Enter amount" min="50" class="w-full border border-gray-300 rounded-lg px-4 py-2" required>
+        </div>
+        <div class="mb-4">
+          <label class="flex items-center">
+            <input type="checkbox" name="recurring" class="mr-2">
+            Make this a monthly recurring donation
+          </label>
+        </div>
+        <div class="mb-6">
+          <label class="block mb-2 font-semibold" for="donate-method">Payment Method</label>
+          <select id="donate-method" name="method" class="w-full border border-gray-300 rounded-lg px-4 py-2" required>
+            <option value="">Select Method</option>
+            <option value="bkash">bKash</option>
+            <option value="nagad">Nagad</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="bank">Bank Transfer</option>
+          </select>
+        </div>
+        <div class="mb-6">
+          <label class="block mb-2 font-semibold" for="donate-name">Name (Optional)</label>
+          <input type="text" id="donate-name" name="name" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg px-4 py-2">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-semibold px-6 py-3 rounded-full w-full transition-all duration-300 transform hover:scale-105">Donate Now</button>
+        </div>
+      </form>
+      <p class="mt-6 text-sm text-gray-500">স্বচ্ছতার জন্য: সকল লেনদেন রেকর্ড রাখা হয় এবং বার্ষিক রিপোর্ট প্রকাশ করা হয়। All transactions are secure via HTTPS.</p>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>🧭 Digital HQ: Registered in Dhaka, Bangladesh</p>
+    <p>📧 info@pvd.org.bd</p>
+    <p class="mt-2">"Let the people speak - জনগণকে কথা বলার সুযোগ দিন"</p>
+    <p class="mt-2 text-sm text-gray-400">© 2025 People’s Voice, Bangladesh | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Donation Amount Setter
+    function setAmount(amount) {
+      document.getElementById('donate-amount').value = amount;
+    }
+  </script>
+</body>
+</html>
