@@ -1,4 +1,4 @@
-/* Custom Styles for Nav (Tailwind এর সাথে মিলিয়ে) */
+/* Custom Styles for Nav (Tailwind) */
 .nav-scrolled {
   background-color: rgba(2, 83, 22, 0.95) !important;
   backdrop-filter: blur(10px);
@@ -12,12 +12,13 @@
 .hamburger.active span:nth-child(2) { opacity: 1; }
 .hamburger span:nth-child(3) { transform: translateY(0.25rem); }
 .hamburger.active span:nth-child(3) { transform: translateY(-0.5rem) rotate(-45deg); }
+
 /* Fallback for hero background */
 #home {
   background-color: #1e5a6d; /* Fallback if image fails */
 }
 
-/* Custom Styles for Mobile Device Responsiveness */
+/* Custom Styles for Mobile Device Responsive */
 @media (max-width: 640px) {
   #home h1 { font-size: 1.5rem; line-height: 1.2; }
   #home p { font-size: 1rem; }
