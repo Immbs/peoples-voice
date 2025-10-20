@@ -77,13 +77,50 @@
   </div>
 </section>
 
-  <!-- 🏛 Mission & Vision -->
-  <section class="py-16 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4">Our Mission & Vision</h2>
-    <p class="max-w-3xl mx-auto text-lg text-gray-700">
-      People’s Voice, Bangladesh এর মূল লক্ষ্য হলো জনগণের কণ্ঠস্বরকে শক্তিশালী করা এবং সমাজে স্বচ্ছতা, জবাবদিহিতা ও ন্যায়ের ভিত্তিতে পরিবর্তন আনা। আমরা বিশ্বাস করি যে সচেতন নাগরিকরা সমাজে ইতিবাচক পরিবর্তনের প্রধান শক্তি। আমাদের মিশন হলো নাগরিকদের তাদের সমস্যা, অভিযোগ ও মতামত প্রকাশ করার জন্য একটি নিরাপদ এবং সহজ প্ল্যাটফর্ম প্রদান করা, যাতে তারা সরকারি ও সামাজিক পদক্ষেপকে প্রভাবিত করতে পারে। ভিশন হিসেবে আমরা চাই একটি এমন বাংলাদেশ যেখানে প্রতিটি নাগরিকের কণ্ঠস্বর শোনা হবে, এবং সবাই একসাথে সামাজিক ও জাতীয় উন্নয়নে অংশগ্রহণ করবে।
-    </p>
-  </section>
+  <div class="h-4"></div>
+
+<!-- 🏛 Mission & Vision -->
+<section class="py-16 bg-green-900 text-white overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+
+      <!-- বাম পাশ: ছবি সহ 3D ফ্লিপ কার্ড -->
+      <div class="perspective order-2 md:order-1 scroll-animate">
+        <div class="relative preserve-3d w-full h-64 rounded-2xl shadow-2xl transition-all duration-500 hover:rotate-y-180 border-4 border-green-700 bg-gradient-to-br from-green-800 to-green-900">
+          <!-- ফ্রন্ট সাইড -->
+          <div class="absolute inset-0 backface-hidden">
+            <img src="https://media.istockphoto.com/id/1500323318/photo/female-doctor-spreading-awareness-among-rural-women-on-womens-health-during-rural-health-care.jpg?s=612x612&w=0&k=20&c=tSBXgW2P4bTbW1C-eXBguIbQIHbMjsC3re4UObSsbFU=" 
+                 class="w-full h-full object-cover rounded-2xl" 
+                 alt="জনগণের অংশগ্রহণের ছবি" loading="lazy">
+          </div>
+          <!-- ব্যাক সাইড -->
+          <div class="absolute inset-0 backface-hidden rotate-y-180 bg-gray-800 p-6 flex items-center justify-center rounded-2xl">
+            <p class="text-center text-lg font-semibold">"আমরা একসাথে পরিবর্তন আনবো!"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ডান পাশ: লেখা -->
+      <div class="order-1 md:order-2 text-center md:text-left h-64 relative rounded-2xl shadow-2xl overflow-hidden scroll-animate">
+        <!-- গ্রেডিয়েন্ট বর্ডার -->
+        <div class="absolute inset-0 rounded-2xl p-[3px] bg-gradient-to-r from-green-400 via-yellow-300 to-green-600 animate-border-glow">
+          <div class="h-full w-full rounded-2xl bg-green-900 p-5 flex flex-col justify-center">
+            <h2 class="text-2xl font-bold mb-3 text-yellow-300 drop-shadow-md">Our Mission & Vision</h2>
+            <p class="text-base leading-relaxed text-gray-100">
+              People’s Voice, Bangladesh এর মূল লক্ষ্য হলো জনগণের কণ্ঠস্বরকে শক্তিশালী করা এবং সমাজে স্বচ্ছতা, জবাবদিহিতা ও ন্যায়ের ভিত্তিতে পরিবর্তন আনা। আমরা বিশ্বাস করি যে সচেতন নাগরিকরাই সমাজে ইতিবাচক পরিবর্তনের প্রধান শক্তি। আমাদের মিশন হলো নাগরিকদের মতামত ও অভিযোগ প্রকাশের জন্য নিরাপদ ও সহজ একটি প্ল্যাটফর্ম প্রদান করা, যাতে তারা সরকারি ও সামাজিক পদক্ষেপকে প্রভাবিত করতে পারে। আমরা এমন একটি বাংলাদেশ গড়তে চাই যেখানে প্রতিটি নাগরিকের কণ্ঠস্বর শোনা হবে এবং সবাই একসাথে জাতীয় উন্নয়নে অংশগ্রহণ করবে।
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ✨ Animated Divider Line -->
+  <div class="mt-12 flex justify-center scroll-animate">
+    <div class="h-[4px] w-48 bg-gradient-to-r from-green-300 via-yellow-200 to-green-400 animate-pulse rounded-full shadow-[0_0_15px_3px_rgba(255,255,200,0.6)]"></div>
+  </div>
+</section>
 
   <!-- 📰 Live Updates -->
   <section class="py-16 bg-gray-100">
@@ -121,7 +158,7 @@
     </div>
   </section>
 
-  <!-- 🗣 Section 3: Citizen Voice Portal -->
+  <!-- 🗣 Section: Citizen Voice Portal -->
   <section id="report" class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">Citizen Voice Portal</h2>
@@ -152,34 +189,34 @@
     </div>
   </section>
 
-  <!-- 🧩 Section 2: About, Services & Contact -->
-  <section id="about" class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-8">About Us</h2>
-      <p class="max-w-3xl mx-auto text-gray-700 mb-10">
-        People’s Voice, Bangladesh — একটি নাগরিক-নেতৃত্বাধীন সংগঠন যা দেশের প্রতিটি মানুষের কণ্ঠকে ন্যায্যভাবে তুলে ধরার লক্ষ্য নিয়ে কাজ করে। আমরা জনগণের তথ্য, অভিযোগ ও মতামত সংগ্রহ করে সরকার, প্রশাসন ও জনগণের মধ্যে একটি সেতুবন্ধন তৈরি করি। আমাদের স্বপ্ন — “একটি সচেতন ও অংশগ্রহণমূলক বাংলাদেশ” গঠন করা যেখানে প্রতিটি নাগরিকের মতামতই হবে শক্তি।
-      </p>
-      <img src="https://scontent.fdac178-1.fna.fbcdn.net/v/t39.30808-6/544976836_774871814920080_2828650769659405952_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=JobQtcGS0CQQ7kNvwFUXcoK&_nc_oc=AdkiQK9YKM96j-uSSCtVP1RguN8mGoAf0wsHVzbq9ARFQ6acV5SX_7q9Usw6a40oXkM&_nc_zt=23&_nc_ht=scontent.fdac178-1.fna&_nc_gid=tD9XPF46zeL0aoC4fG4JuA&oh=00_Afc76BKsGwCYHWlh4_NPh_UHFdb4no4NFQz3ZNjyZMM2iA&oe=68F84BD2" class="mx-auto rounded-2xl shadow-md w-2/3 mb-12" alt="সংগঠনের টিমের ছবি" loading="lazy" />
-      <h3 class="text-2xl font-semibold mb-6">Our Core Services</h3>
-      <div class="grid md:grid-cols-3 gap-6 text-left">
-        <div class="bg-white p-6 rounded-2xl shadow-md">
-          <h4 class="font-bold text-lg mb-2">Citizen Reporting</h4>
-          <p class="text-gray-600 mb-4">নাগরিকদের সমস্যা ও অনিয়ম রিপোর্ট করার সুযোগ।</p>
-          <a href="#report" class="text-blue-600 font-semibold">Read More →</a>
-        </div>
-        <div class="bg-white p-6 rounded-2xl shadow-md">
-          <h4 class="font-bold text-lg mb-2">Volunteer Network</h4>
-          <p class="text-gray-600 mb-4">দেশব্যাপী স্বেচ্ছাসেবক টিমের মাধ্যমে মানবিক সহায়তা।</p>
-          <a href="#volunteer" class="text-blue-600 font-semibold">Join →</a>
-        </div>
-        <div class="bg-white p-6 rounded-2xl shadow-md">
-          <h4 class="font-bold text-lg mb-2">Training & Workshop</h4>
-          <p class="text-gray-600 mb-4">জনগণের দক্ষতা বৃদ্ধির জন্য নিয়মিত প্রশিক্ষণ আয়োজন।</p>
-          <a href="#contact" class="text-blue-600 font-semibold">Read More →</a>
-        </div>
+<!-- 🧩 Section: About, Services & Contact -->
+<section id="about" class="py-16 bg-gray-100 animate-fade-in"> <!-- Fade-in animation for the whole section -->
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-8">About Us</h2>
+    <p class="max-w-3xl mx-auto text-gray-700 mb-10">
+      People’s Voice, Bangladesh — একটি নাগরিক-নেতৃত্বাধীন সংগঠন যা দেশের প্রতিটি মানুষের কণ্ঠকে ন্যায্যভাবে তুলে ধরার লক্ষ্য নিয়ে কাজ করে। আমরা জনগণের তথ্য, অভিযোগ ও মতামত সংগ্রহ করে সরকার, প্রশাসন ও জনগণের মধ্যে একটি সেতুবন্ধন তৈরি করি। আমাদের স্বপ্ন — “একটি সচেতন ও অংশগ্রহণমূলক বাংলাদেশ” গঠন করা যেখানে প্রতিটি নাগরিকের মতামতই হবে শক্তি।
+    </p>
+    <img src="https://scontent.fdac178-1.fna.fbcdn.net/v/t39.30808-6/544976836_774871814920080_2828650769659405952_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=JobQtcGS0CQQ7kNvwFUXcoK&_nc_oc=AdkiQK9YKM96j-uSSCtVP1RguN8mGoAf0wsHVzbq9ARFQ6acV5SX_7q9Usw6a40oXkM&_nc_zt=23&_nc_ht=scontent.fdac178-1.fna&_nc_gid=tD9XPF46zeL0aoC4fG4JuA&oh=00_Afc76BKsGwCYHWlh4_NPh_UHFdb4no4NFQz3ZNjyZMM2iA&oe=68F84BD2" class="mx-auto rounded-2xl shadow-md w-2/3 mb-12" alt="সংগঠনের টিমের ছবি" loading="lazy" />
+    <h3 class="text-2xl font-semibold mb-6">Our Core Services</h3>
+    <div class="grid md:grid-cols-3 gap-6 text-left">
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition-all duration-300 ease-in-out"> <!-- Hover animation added -->
+        <h4 class="font-bold text-lg mb-2">Citizen Reporting</h4>
+        <p class="text-gray-600 mb-4">নাগরিকদের সমস্যা ও অনিয়ম রিপোর্ট করার সুযোগ।</p>
+        <a href="#report" class="text-blue-600 font-semibold">Read More →</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition-all duration-300 ease-in-out"> <!-- Hover animation added -->
+        <h4 class="font-bold text-lg mb-2">Volunteer Network</h4>
+        <p class="text-gray-600 mb-4">দেশব্যাপী স্বেচ্ছাসেবক টিমের মাধ্যমে মানবিক সহায়তা।</p>
+        <a href="#volunteer" class="text-blue-600 font-semibold">Join →</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition-all duration-300 ease-in-out"> <!-- Hover animation added -->
+        <h4 class="font-bold text-lg mb-2">Training & Workshop</h4>
+        <p class="text-gray-600 mb-4">জনগণের দক্ষতা বৃদ্ধির জন্য নিয়মিত প্রশিক্ষণ আয়োজন।</p>
+        <a href="#contact" class="text-blue-600 font-semibold">Read More →</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="contact" class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-6 text-center">

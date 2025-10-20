@@ -31,6 +31,17 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Scroll Animation Script 
+const elements = document.querySelectorAll('.scroll-animate');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+elements.forEach(el => observer.observe(el));
+
 // Form Submissions (ব্যাকএন্ড ইন্টিগ্রেশন – Fetch API দিয়ে)
 document.getElementById('report-form').addEventListener('submit', async (e) => {
   e.preventDefault();

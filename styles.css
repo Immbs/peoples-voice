@@ -17,6 +17,66 @@
 #home {
   background-color: #1e5a6d; /* Fallback if image fails */
 }
+.perspective {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.hover\:rotate-y-180:hover {
+  transform: rotateY(180deg);
+}
+
+/* Scroll & Border Animation CSS */
+
+@keyframes border-glow {
+  0% { filter: drop-shadow(0 0 5px #f1ffb0); }
+  50% { filter: drop-shadow(0 0 15px #fff09e); }
+  100% { filter: drop-shadow(0 0 5px #f1ffb0); }
+}
+.animate-border-glow {
+  animation: border-glow 3s ease-in-out infinite;
+}
+
+/* Fade-in + Slide-up Animation */
+@keyframes fade-slide-up {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+.scroll-animate.visible {
+  animation: fade-slide-up 1s ease-out forwards;
+}
+
+@keyframes flip3D {
+  from { transform: perspective(1000px) rotateY(0deg); }
+  to { transform: perspective(1000px) rotateY(180deg); }
+}
+
+.animate-3d-flip {
+  animation: flip3D 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
 
 /* Custom Styles for Mobile Device Responsive */
 @media (max-width: 640px) {
