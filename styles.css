@@ -16,3 +16,10 @@
 #home {
   background-color: #1e5a6d; /* Fallback if image fails */
 }
+
+/* Custom Styles for Mobile Device Responsiveness */
+@media (max-width: 640px) {
+  #home h1 { font-size: 1.5rem; line-height: 1.2; }
+  #home p { font-size: 1rem; }
+  .hero-buttons { flex-direction: column; gap: 0.5rem; }
+} 
